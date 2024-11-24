@@ -1,0 +1,32 @@
+.most__popular{
+    margin-top: 2em;
+    .popular__intro{
+        display: flex;
+        justify-content: space-between;
+        .popular__text {
+            h1{
+                font-weight: 600;
+            }
+            p{
+                font-weight: 300;
+                font-size: 1.125rem;
+                color: #7F7D7D;
+            }
+        }
+
+        .popular__button{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            button{
+                border: none;
+                background: none;
+                padding: 0.5em 1.5em;
+                border-radius: 1em;
+                background-color: #F79F1A;
+                color: #FFFFFF;
+                font-weight: 600;
+            }
+        }
+    }
+}

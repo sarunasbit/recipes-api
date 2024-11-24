@@ -1,0 +1,43 @@
+nav {
+    background-color: #FFFFFF;
+
+    .container-fluid{
+        padding: 0;
+        .navbar-brand{
+            font-weight: 600;
+            font-size: 1.8rem;
+            color: #046E1B;
+            &:hover{
+                color: #046E1B;
+            }
+        }
+    
+        ul{
+            li{
+                font-size: 1.25rem;
+                font-weight: 600;
+                &:hover{
+                    color: #046E1B;
+                }
+            }
+        }
+        .search-container {
+            display: flex;
+            align-items: center;
+            #search-form {
+                display: flex;
+                flex-direction: row;
+            }
+            .search-icon {
+                cursor: pointer;
+                font-size: 1.8rem;
+                &:hover{
+                    color: #046E1B;
+                }
+              }
+              .d-none {
+                display: none !important;
+              }
+          }
+    }
+}
