@@ -7,23 +7,18 @@ import onClickDisplay from './modules/ui/onClickDisplay';
 
 NavbarSearchIcon()
 let url = "https://www.themealdb.com/api/json/v1/1/";
-const recep = new RecepiesApi(url);
-
-
-// window.addEventListener('load',async ()=> {
-//     await recep.getRandomRecepies()
-// });
+const recipie = new RecepiesApi(url);
 
 
 document.addEventListener("DOMContentLoaded",async () => {
-    await recep.getRandomRecepies()
+    await recipie.getRandomRecepies()
 
     
     onClickDisplay.displayRandomMeals();
     onClickDisplay.onClickMealList();
     onClickDisplay.onClickNavHome();
-    onClickDisplay.onClickDispalyRecepie(recep);
-    onClickDisplay.onClickdisplaySearch(recep);
+    onClickDisplay.onClickDispalyRecepie(recipie);
+    onClickDisplay.onClickdisplaySearch(recipie);
 
 });
 
